@@ -1,0 +1,38 @@
+# --- GÜVENLİK ---
+# Şifreleri ve API anahtarlarını asla yükleme
+.env
+.env.local
+.env.production
+
+# --- VERİTABANI ---
+# SQL yedeklerini yükleme (İçinde veri olabilir)
+*.sql
+*.dump
+
+# --- BAĞIMLILIKLAR ---
+# Composer kütüphaneleri (vendor klasörü)
+vendor/
+composer.lock
+
+# --- KULLANICI DOSYALARI ---
+# Kullanıcıların yüklediği resim/pdf'ler
+uploads/
+assets/uploads/
+storage/
+
+# --- SİSTEM DOSYALARI ---
+# İşletim sistemi çöp dosyaları
+.DS_Store
+Thumbs.db
+
+# --- EDITÖR AYARLARI ---
+# VS Code veya IntelliJ ayarları
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- LOG DOSYALARI ---
+# Hata kayıtları (Güvenlik açığı yaratabilir)
+*.log
+logs/
